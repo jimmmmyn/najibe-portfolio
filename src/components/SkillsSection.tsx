@@ -139,6 +139,10 @@ export default function SkillsSection() {
               </h3>
               <div className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {skills.AgileMethodologiesCommunication.map((skill, index) => (
+                <span className="mr-2 text-xl">☁️</span> AI Agents LLM
+              </h3>
+              <div className="flex flex-wrap gap-2 justify-center md:justify-start">
+                {skills.aiAgentAndLlm.map((skill, index) => (
                   <SkillTag key={skill} skill={skill} index={index} />
                 ))}
               </div>

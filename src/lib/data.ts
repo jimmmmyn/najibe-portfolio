@@ -82,6 +82,14 @@ export const skills = {
     "GraphQL", 
     "FastAPI"
   ],
+  aiAgentAndLlm: [
+    "Bitbucket API", 
+    "Jira Automation", 
+    "OpenAI", 
+    "Model Context Protocol (MCP)", 
+    "LangGraph Framework",
+    "LlamaIndex Framework"
+  ],
 };
 
 export const projects = [
@@ -140,6 +148,17 @@ export const projects = [
       "Policy S3 pour l'archivage automatique des données."
     ],
   },
+  {
+    title: "Agent IA Jira → Bitbucket (Automatisation de PR via MCP)",
+    description: [
+      "Développement d’un agent IA capable de lire et d’interpréter automatiquement les tickets Jira afin d’en extraire la tâche technique à réaliser.",
+      "Interprétation sémantique du ticket par l’agent pour générer les instructions de développement correspondantes.",
+      "Intégration d’un MCP (Model Context Protocol) connecté à Bitbucket permettant à l’agent de créer automatiquement une Pull Request à partir de l’analyse du ticket.",
+      "Mise à jour automatique du code Terraform sur Bitbucket par l’agent afin de provisionner et gérer les accès au Data Warehouse RDS, garantissant une gestion des droits cohérente et traçable via l’Infrastructure as Code.",
+      "Exposition de l’agent via une API REST développée avec FastAPI, rendant le pipeline accessible à des systèmes tiers.",
+      "Déclenchement automatique de l’agent via Jira Automation : à chaque création de ticket, une règle d’automatisation consomme l’endpoint FastAPI pour lancer le traitement de bout en bout."
+    ],
+  },
 ];
 
 export const awards = [
@@ -159,6 +178,12 @@ export const awards = [
     name: "AI Agents Course",
     issuer: "Hugging Face",
     date: "Oct 2025",
+    type: "International"
+  },
+  {
+    name: "MCP Course",
+    issuer: "Hugging Face",
+    date: "March 2025",
     type: "International"
   }
 ];
